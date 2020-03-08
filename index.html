@@ -78,8 +78,8 @@
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">Story</a></li>
+						<li style="cursor: pointer" class="active"><a id="home">Home</a></li>
+						<li style="cursor: pointer"><a id="story">Story</a></li>
 						<li class="has-dropdown">
 							<a href="services.html">Services</a>
 							<ul class="dropdown">
@@ -113,10 +113,10 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Joefrey &amp; Sheila</h1>
-							<h2>We Are Getting Married</h2>
+							<h1>Giáp &amp; Huyên</h1>
+							<h2>Chúng tôi sẽ tổ chức đám cưới</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+							<p><a target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Đám cưới Giáp %26+Huyên&details=Địa chỉ nhà trai: Gia mỹ, Đô Thành, Yên Thành, Nghệ An, Việt Nam (https://bit.ly/2TNbskn)%0A%0AĐịa chỉ nhà gái: Cầu Đen, Kiều Thạch, Hưng Hà, Thái Bình, Việt Nam (https://goo.gl/maps/ptx2iJfDSKYFjdvM8)&location=Gia Mỹ, Đô Thành, Nghệ An, Việt Nam&dates=20200412T060000Z/20200412T080000Z" class="btn btn-default btn-sm">Lưu lại thông tin</a></p>
 						</div>
 					</div>
 				</div>
@@ -609,6 +609,18 @@
 	<script src="js/main.js"></script>
 
 	<script>
+	$("#home").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $("#fh5co-header").offset().top
+		}, 1000);	
+	});
+	
+	$("#story").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $("#fh5co-couple-story").offset().top
+		}, 1000);	
+	});
+	
     var d = new Date(2020, 04, 12, 12, 00, 00);
 	
     // default example

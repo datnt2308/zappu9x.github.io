@@ -179,9 +179,26 @@
 			}
 
 		});
-	
 	};
+	
+	var goToElement = function(id, target) {
+		console.log(id, target);
+		$(id).on('click', function(event){
+			
+			event.preventDefault();
 
+			$('html, body').animate({
+				scrollTop: $(target).offset().top
+			}, 1000, 'easeInOutExpo');
+			
+			return false;
+		});
+	};
+	
+	var navClickEvent = function() {
+		goToElement('#couple', '#fh5co-couple');
+		goToElement('#story', '#fh5co-couple-story');
+	}
 
 	// Loading page
 	var loaderPage = function() {
@@ -217,6 +234,7 @@
 	$(function(){
 		mobileMenuOutsideClick();
 		parallax();
+		navClickEvent();
 		offcanvasMenu();
 		burgerMenu();
 		contentWayPoint();

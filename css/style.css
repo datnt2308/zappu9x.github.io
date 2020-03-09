@@ -994,6 +994,40 @@ form label {
   /* words */
 }
 
+@media screen and (max-width: 768px) {
+  .simply-countdown > .simply-section {
+    /* coutndown blocks */
+    height: 80px;
+    width: 80px;
+  }
+  .simply-countdown > .simply-section > div {
+    /* countdown block inner div */
+    height: 80px;
+    width: 80px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 24px;
+    /* amounts */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .simply-countdown > .simply-section {
+    /* coutndown blocks */
+    height: 70px;
+    width: 70px;
+  }
+  .simply-countdown > .simply-section > div {
+    /* countdown block inner div */
+    height: 70px;
+    width: 70px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 18px;
+    /* amounts */
+  }
+}
+
 #fh5co-testimonial,
 #fh5co-services,
 #fh5co-started,

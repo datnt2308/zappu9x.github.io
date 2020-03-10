@@ -77,10 +77,10 @@
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li style="cursor: pointer" class="active"><a id="home">Trang chủ</a></li>
-						<li style="cursor: pointer"><a id="couple">Giới thiệu</a></li>
-						<li style="cursor: pointer"><a id="infomation">Thông tin</a></li>
-						<li style="cursor: pointer"><a id="story">Câu chuyện</a></li>
+						<li style="cursor: pointer" class="active"><a class="home">Trang chủ</a></li>
+						<li style="cursor: pointer"><a class="couple">Giới thiệu</a></li>
+						<li style="cursor: pointer"><a class="infomation">Thông tin</a></li>
+						<li style="cursor: pointer"><a class="story">Câu chuyện</a></li>
 						<li class="has-dropdown">
 							<a href="services.html">Services</a>
 							<ul class="dropdown">
@@ -610,12 +610,6 @@
 	<script src="js/main.js"></script>
 
 	<script>
-	$("#home").click(function() {
-		$([document.documentElement, document.body]).animate({
-			scrollTop: $("#fh5co-header").offset().top
-		}, 1000);	
-	});
-	
     var d = new Date(2020, 04, 12, 12, 00, 00);
 	
     // default example

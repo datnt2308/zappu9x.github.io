@@ -2,22 +2,23 @@
 	
 	'use strict';
 
+	var closeMoblieMenu = function() {
+		if ($('body').hasClass('offcanvas') ) {
+    		$('body').removeClass('offcanvas');
+    		$('.js-fh5co-nav-toggle').removeClass('active');
+	    }
+	}
+	
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
-	    var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-
-	    	if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
-	    	}
-	    }
+			var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+				closeMoblieMenu();
+			}
 		});
 
 	};
-
 
 	var offcanvasMenu = function() {
 
@@ -182,11 +183,8 @@
 	};
 	
 	var goToElement = function(id, target) {
-		console.log(id, target);
-		$(id).on('click', function(event){
-			
-			event.preventDefault();
-
+		$(id).on('click', function(e){
+	    	closeMoblieMenu();
 			$('html, body').animate({
 				scrollTop: $(target).offset().top
 			}, 1000, 'easeInOutExpo');
@@ -196,8 +194,10 @@
 	};
 	
 	var navClickEvent = function() {
-		goToElement('#couple', '#fh5co-couple');
-		goToElement('#story', '#fh5co-couple-story');
+		goToElement('.home', '#fh5co-header');
+		goToElement('.couple', '#fh5co-couple');
+		goToElement('.infomation', '#fh5co-event');
+		goToElement('.story', '#fh5co-couple-story');
 	}
 
 	// Loading page
@@ -234,7 +234,6 @@
 	$(function(){
 		mobileMenuOutsideClick();
 		parallax();
-		navClickEvent();
 		offcanvasMenu();
 		burgerMenu();
 		contentWayPoint();
@@ -244,6 +243,7 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
+		navClickEvent();
 	});
 
 

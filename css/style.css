@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter,
@@ -1222,11 +1222,6 @@ form label {
   color: #F14E95;
   font-family: "Sacramento", Arial, serif;
 }
-@media screen and (max-width: 768px) {
-  .fh5co-heading h2 {
-    font-size: 40px;
-  }
-}
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
@@ -1238,6 +1233,11 @@ form label {
   letter-spacing: 2px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 768px) {
+  .fh5co-heading h2 {
+    font-size: 40px;
+  }
 }
 
 #fh5co-testimonial .wrap-testimony {

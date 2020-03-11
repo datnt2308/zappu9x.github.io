@@ -194,10 +194,10 @@
 	};
 	
 	var navClickEvent = function() {
-		goToElement('.home', '#fh5co-header');
 		goToElement('.couple', '#fh5co-couple');
 		goToElement('.infomation', '#fh5co-event');
 		goToElement('.story', '#fh5co-couple-story');
+		goToElement('.gallery', '#fh5co-gallery');
 	}
 
 	// Loading page

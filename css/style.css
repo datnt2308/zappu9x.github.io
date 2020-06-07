@@ -363,7 +363,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-event .event-wrap {
   border: 1px solid #d4d4d4;
-  /*background: rgba(0, 0, 0, 0.5);*/
+  background: white;
   padding: 30px;
   width: 100%;
   -webkit-border-radius: 4px;
@@ -1149,7 +1149,7 @@ form label {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  /* margin-bottom: 5em; */
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;

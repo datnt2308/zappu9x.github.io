@@ -198,6 +198,8 @@
 		goToElement('.infomation', '#fh5co-event');
 		goToElement('.story', '#fh5co-couple-story');
 		goToElement('.gallery', '#fh5co-gallery');
+		goToElement('.wishes', '#fh5co-testimonial');
+		goToElement('.join', '#fh5co-started');
 	}
 
 	// Loading page
